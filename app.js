@@ -5,8 +5,7 @@ const btn = document.querySelector("button");
 btn.addEventListener("click", () => {
   if (inputBox.value === "") {
     alert("You must write something!!");
-  } 
-  else {
+  } else {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
@@ -16,26 +15,29 @@ btn.addEventListener("click", () => {
   }
 
   inputBox.value = "";
-  saveData()
+  saveData();
 });
 
-listContainer.addEventListener("click",(e) => {
+listContainer.addEventListener(
+  "click",
+  (e) => {
     if (e.target.tagName === "LI") {
       e.target.classList.toggle("checked");
-      saveData()
-    } 
-    else if (e.target.tagName === "SPAN") {
+      saveData();
+    } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
-      saveData()
+      saveData();
     }
-  },false);
+  },
+  false
+);
 
 function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
 
-function showData(){
-    listContainer.innerHTML = localStorage.getItem("data");
+function showData() {
+  listContainer.innerHTML = localStorage.getItem("data");
 }
- 
-showData()
+
+showData();
