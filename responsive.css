@@ -1,29 +1,54 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   h2 img {
     width: 8vw;
   }
 
-  .row {
-    margin: 0px 0px 10px -20px;
-    padding-left: 5px;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-app {
+    height:auto;
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+
+  .row input {
+    width: 100%;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  
+  .row button {
+    font-size: 10px;
   }
 
   ul li {
     margin-left: -15px;
   }
-}
 
-@media only screen and (max-width: 320px) {
+  h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
   h2 img {
-    width: 8vw;
+    width: 10px;
+    margin-left: 5px;
   }
+  
+  #list-container {
+    display: flex;
+    justify-content: space-between;
 
-  .row {
-    margin: 0px 0px 10px -20px;
-    padding-left: 5px;
-  }
-
-  ul li {
-    margin-left: -15px;
+    flex-direction: column;
   }
 }
