@@ -44,11 +44,14 @@
     width: 10px;
     margin-left: 5px;
   }
-  
-  #list-container {
+   
+  #list-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-
     flex-direction: column;
+    flex-wrap: wrap;
+    text-wrap: wrap;
   }
 }
+

@@ -40,9 +40,8 @@ h2 img {
 }
 
 h2 {
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .row {
@@ -67,7 +66,7 @@ h2 {
     border: none;
     outline: none;
     padding: 15px 40px;
-    background: #ff004ce8;
+    background:lightseagreen;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
